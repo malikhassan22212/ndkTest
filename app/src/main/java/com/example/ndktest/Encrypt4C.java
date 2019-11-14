@@ -5,7 +5,6 @@ package com.example.ndktest;
  * Email：1104128773@qq.com
  */
 
-
 public class Encrypt4C implements Encrypt {
     static {
         System.loadLibrary("native-lib");

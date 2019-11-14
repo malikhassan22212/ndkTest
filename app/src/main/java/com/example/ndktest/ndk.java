@@ -10,10 +10,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import java.nio.charset.StandardCharsets;
 
- public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+ public class ndk extends AppCompatActivity implements View.OnClickListener {
     private TextView tvResult;
     private EditText etKey;
-    private TextView tvText;
+    private EditText tvText;
     private Button btEncrypt;
     private Button btDecrypt;
     private TextView tvText2;
@@ -24,7 +24,8 @@ import java.nio.charset.StandardCharsets;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.ndk_main);
+
         tvText = findViewById(R.id.text);
         etKey = findViewById(R.id.text_key);
         btEncrypt = findViewById(R.id.bt_encrypt);
@@ -96,7 +97,7 @@ import java.nio.charset.StandardCharsets;
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
             e.printStackTrace();
         }
-    }
+        }
 
     public static void e(String s) {
         Log.e("lcy", s);
